@@ -203,19 +203,28 @@ section {
 
 .proj {
   padding: 1.5em;
-  height: 21em;
   background-color: var(--sec);
 }
 
 .sample {
-  height: 50%;
+  height: 19em;
   width: 100%;
   display: grid;
   align-content: space-between;
+  background-size: cover;
 }
 
 .technologies {
   justify-self: flex-end;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.technologies, img {
+  width: auto;
+  height: 1.6em;
+  padding: 0.2em;
+  margin: 0.2em;
 }
 
 

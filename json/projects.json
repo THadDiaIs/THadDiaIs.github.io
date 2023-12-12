@@ -1,0 +1,37 @@
+{
+   "1":{
+      "name":"Project 1",
+      "description":"This is project 1, lorem ipsum",
+      "technologies":["html","css","js"],
+      "snapshot": "./images/hexagonLuxury.png",
+      "url": "https://www.google.com"
+    },
+   "2":{
+      "name":"Project 2",
+      "description":"This is project 2 lorem ipsum",
+      "technologies":["html","css","js", "bootstrap", "jquery"],
+      "snapshot": "./images/hexagon.webp",
+      "url": "https://www.google.com"
+   },
+   "3":{
+      "name":"Retocador de Imagenes",
+      "description":"This is a compact image editor, this allows us to upload an image and eidt it then save it to local storage for fully free",
+      "technologies":["html","css","js","jquery"],
+      "snapshot": "./images/retocador.png",
+      "url": "https://github.com/THadDiaIs/canvas-proj"
+   },
+   "4":{
+      "name":"Project 4",
+      "description":"This is project 4 some awesome description",
+      "technologies":["python", "tkinter", "pandas", "smptplib"],
+      "snapshot": "./images/hexagon.webp",
+      "url": "https://www.google.com"
+   },
+   "5":{
+      "name":"Project 5",
+      "description":"This is project 5 what a beautiful description",
+      "technologies":["html","css","js"],
+      "snapshot": "./images/hexagon.webp",
+      "url": "https://www.google.com"
+   }
+}
