@@ -13,7 +13,7 @@
             <p class="description">
             ${data[key].description}
          </p>
-         <div class="url-link"><a href="${data[key].url}">${data[key].url}</a></div>
+         <div class="url-link"><a href="${data[key].url}">Visit</a></div>
          </div>
          `
          }

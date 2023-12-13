@@ -1,16 +1,16 @@
 {
    "1":{
-      "name":"Project 1",
-      "description":"This is project 1, lorem ipsum",
-      "technologies":["html","css","js"],
-      "snapshot": "./images/hexagonLuxury.png",
+      "name":"SENKO",
+      "description":"A lightweight and user friendly point of sale system with many tools and features. Created using: html, css, js, bootstrap, and jquery. It's fully responsive.",
+      "technologies":["html","css","js", "bootstrap", "jquery"],
+      "snapshot": "./images/senko.png",
       "url": "https://www.google.com"
     },
    "2":{
-      "name":"Project 2",
-      "description":"This is project 2 lorem ipsum",
-      "technologies":["html","css","js", "bootstrap", "jquery"],
-      "snapshot": "./images/hexagon.webp",
+      "name":"Ecommerce Site",
+      "description":"Reliable and user friendly ecommerce site, using html, css, and js, storing data in local storage",
+      "technologies":["html","css","js"],
+      "snapshot": "./images/ecomerce.png",
       "url": "https://www.google.com"
    },
    "3":{
@@ -21,17 +21,24 @@
       "url": "https://github.com/THadDiaIs/canvas-proj"
    },
    "4":{
-      "name":"Project 4",
-      "description":"This is project 4 some awesome description",
-      "technologies":["python", "tkinter", "pandas", "smptplib"],
-      "snapshot": "./images/hexagon.webp",
+      "name":"DHantoV Airline website",
+      "description":"You can track your flight with this website, or booking online. It's fully responsive. Created with html, css and js.",
+      "technologies":["html","css","js"],
+      "snapshot": "./images/dhantov.png",
       "url": "https://www.google.com"
    },
    "5":{
-      "name":"Project 5",
-      "description":"This is project 5 what a beautiful description",
-      "technologies":["html","css","js"],
-      "snapshot": "./images/hexagon.webp",
+      "name":"United States States",
+      "description":"A simple game made with tkinter and pandas. Just write the name of the state you know then the game will tell you if it's correct or not",
+      "technologies":["python", "pandas"],
+      "snapshot": "./images/usStatesQuiz.png",
+      "url": "https://www.google.com"
+   },
+   "6":{
+      "name":"Learn a Language",
+      "description":"This is project 6 what a beautiful description",
+      "technologies":["python", "pandas", "smptplib"],
+      "snapshot": "./images/LearnALang.png",
       "url": "https://www.google.com"
    }
 }
