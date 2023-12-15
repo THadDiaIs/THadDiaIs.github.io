@@ -66,6 +66,10 @@ h1, h2 {
   color: var(--third);
 }
 
+h3{
+  text-align: center;
+}
+
 .full-scrn,
 .attached {
   height: 100vh;
@@ -102,7 +106,7 @@ h1, h2 {
 
 .nav-bar {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   height: 50px;
   position: fixed;
   left: 0;
@@ -168,6 +172,8 @@ section {
   flex-direction: column;
   justify-content: center;
   place-items: center;
+  margin: 3em 0;
+  width: 95%;
 }
 
 .title {
@@ -178,8 +184,12 @@ section {
   transform: scale(1.1);
 }
 
-.title, .about-me, .gretting{
+.title, .intro-text, .gretting{
   cursor:default;
+}
+
+.intro {
+  max-width: 80%;
 }
 
 .heading {
@@ -237,13 +247,49 @@ section {
   height: 1.5em;
   margin: 0.2em;
 }
+
+.hexagon {
+  width: 100px;
+  height: 55px;
+  background-color: rgba(25, 55, 109, 0.87);
+  position: fixed;
+  right: 6em;
+  top: 6em;
+  animation: rotating 3s infinite;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 27.5px solid rgba(25, 55, 109, 0.87);
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 27.5px solid rgba(25, 55, 109, 0.87)
+}
+
+.float-logo {
+  width: 50px;
+  height: auto;
+}
+
 @media(prefers-reduced-motion:reduce){
   body{
     scroll-behavior: smooth;
   }
 }
 
-@media (min-width:600px) {
+@media ( min-width:600px) {
 
   body {
     font-size: 17px;
@@ -257,7 +303,7 @@ section {
 
   .nav-bar {
     height: 55px;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr 3fr;
   }
 
   .logo {
@@ -274,9 +320,22 @@ section {
     font-size: 1rem;
   }
 
+  section {
+    width: 100%;
+  }
   .proj-container {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
 }
 
 .test {

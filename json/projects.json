@@ -1,7 +1,7 @@
 {
    "1":{
       "name":"SENKO",
-      "description":"A lightweight and user friendly point of sale system with many tools and features. Created using: html, css, js, bootstrap, and jquery. It's fully responsive.",
+      "description":"A lightweight and user friendly point of sale system with many tools and features. Created using: html, css, js, bootstrap, and jquery. With QR code scanner support and ticket of sales generation.",
       "technologies":["html","css","js", "bootstrap", "jquery"],
       "snapshot": "./images/senko.png",
       "url": "https://www.google.com"
@@ -36,8 +36,8 @@
    },
    "6":{
       "name":"Learn a Language",
-      "description":"This is project 6 what a beautiful description",
-      "technologies":["python", "pandas", "smptplib"],
+      "description":"A simple and powerfull tool to learn french or another language. Using an advvanced algorithm that increases your chances to learn and reduces the time to memorize.",
+      "technologies":["python", "pandas"],
       "snapshot": "./images/LearnALang.png",
       "url": "https://www.google.com"
    }
