@@ -5,7 +5,7 @@
       "technologies":["html","css","js", "bootstrap", "jquery"],
       "snapshot": "./images/senko.png",
       "url": "https://www.google.com"
-    },
+   },
    "2":{
       "name":"Ecommerce Site",
       "description":"Reliable and user friendly ecommerce site, using html, css, and js, storing data in local storage",
@@ -14,7 +14,7 @@
       "url": "https://www.google.com"
    },
    "3":{
-      "name":"Retocador de Imagenes",
+      "name":"Image manipulation project",
       "description":"This is a compact image editor, this allows us to upload an image and eidt it then save it to local storage for fully free",
       "technologies":["html","css","js","jquery"],
       "snapshot": "./images/retocador.png",

@@ -1,3 +1,15 @@
+let personalLinkClick = (e) => {
+   e.preventDefault();
+   navigator.clipboard.writeText(e.target.alt);
+   ///create a tooltip here and a notification to replace the alert below
+   alert("Copied the text: " + e.target.alt);
+}
+
+let output = document.getElementById("output-box");
+let personalLinkHover = (e) => {
+   e.target.alt ? output.innerText = e.target.alt : output.innerText = "|";
+}
+
 {
 
    fetch('./json/projects.json').then((response) => {
@@ -25,7 +37,7 @@
 
    window.addEventListener('scroll', () => {
       let nav = document.getElementById("nav-bar");
-      if (window.scrollY > 0) {
+      if (window.scrollY > 5) {
          nav.classList.add("blured");
       } else {
          nav.classList.remove("blured");
@@ -40,10 +52,5 @@
 
 
    });
-
-   let output = document.getElementById('output-box');
-   document.querySelectorAll(".personal-link-img").forEach((elem) => {
-      addEventListener('mouseover',
-         (mouse) => mouse.target ? output.innerText = mouse.target.alt : output.innerText = "None");
-   });
+   
 }

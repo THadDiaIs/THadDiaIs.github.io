@@ -205,10 +205,11 @@ section {
 }
 
 .output-box{
-  color: var(--third);
+  color: var(--fourth);
   font-size: 1.3em;
   font-family: 'Josefine', 'Lucida Sans Regular', Verdana, sans-serif;
   text-align: center;
+  /* width: 30em; */
 }
 
 .proj-container {
@@ -255,7 +256,7 @@ section {
   position: fixed;
   right: 6em;
   top: 6em;
-  animation: rotating 3s infinite;
+  animation: rotating 7s infinite;
 }
 
 .hexagon:before,
@@ -289,7 +290,7 @@ section {
   }
 }
 
-@media ( min-width:600px) {
+@media screen and ( min-width:600px) {
 
   body {
     font-size: 17px;
@@ -324,8 +325,21 @@ section {
     width: 100%;
   }
   .proj-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .proj-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width:1600px) {
+  .proj-container {
     grid-template-columns: repeat(4, 1fr);
   }
+  
 }
 
 @keyframes rotating {

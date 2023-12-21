@@ -19,7 +19,7 @@
         <ul class="nav-item">
           <li class="nav-link"><a class="btn-link" href="#welcome">Welcome</a></li>
           <li class="nav-link"><a class="btn-link" href="#projects">Projects</a></li>
-          <li class="nav-link"><a class="btn-link" href="#projects">About</a></li>
+          <li class="nav-link"><a class="btn-link" href="#about">About</a></li>
           <li class="nav-link"><a class="btn-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -33,17 +33,19 @@
               developer with a focus on creating
               innovative and user-friendly digital experiences. Explore my projects and learn more about my skills and
               expertise. Let's connect and bring your ideas to life!<h1>
-            <h3>Feel free to leave a comment, feedback or ask anything in the form below.</h3>
+                <h3>Feel free to leave a comment, feedback or ask anything in the form below.</h3>
           </div>
           <div class="contact-link">
-            <a class="personal-link" href="http://none" target="_blank" rel="noopener noreferrer"><img
-                class="personal-link-img" src="../images/github.svg" alt="http://none" /></a>
-            <a class="personal-link" href="http://poroton" target="_blank" rel="noopener noreferrer"><img
-                class="personal-link-img" src="../images/protonmail.svg" alt="http://poroton" /></a>
-            <a class="personal-link" href="http://github" target="_blank" rel="noopener noreferrer"><img
-                class="personal-link-img" src="../images/github.svg" alt="http://github" /></a>
-            <div class="output-box" id="output-box"></div>
+            <a class="personal-link" href="#" target="_blank" rel="noopener noreferrer"><img class="personal-link-img"
+                onclick="personalLinkClick(event)" onmouseover="personalLinkHover(event)" src="../images/github.svg" alt="#" /></a>
+            <a class="personal-link" href="https://proton.me/mail" target="_blank" rel="noopener noreferrer"><img
+                class="personal-link-img" onclick="personalLinkClick(event)" onmouseover="personalLinkHover(event)" src="../images/protonmail.svg"
+                alt="diagtswix@proton.me" /></a>
+            <a class="personal-link" href="https://github.com/THadDiaIs" target="_blank" rel="noopener noreferrer"><img
+                class="personal-link-img" onclick="personalLinkClick(event)" onmouseover="personalLinkHover(event)" src="../images/github.svg"
+                alt="github.com/THadDiaIs" /></a>
           </div>
+          <div class="output-box" id="output-box">|</div>
         </section>
 
         <section class="pojects" id="projects">
@@ -71,13 +73,42 @@
 
         <section class="about" id="about">
           <h2 class="heading">About me</h2>
-        </section>
+          <h2 class="about-text">
+            Hello, my name is Danny Ismael Guix Torres, from Guatemala.
+            I am passionate about programming and enjoy working on the frontend. However, my vision is to become a
+            FullStack developer and create user-friendly, fast, and reliable websites that make daily tasks easy.
+          </h2>
+          <h2 class="about-text">
+            With a constant learning journey, expanding my knowledge in various programming languages. I have a solid
+            understanding of Python at an intermediate level, while my proficiency in Java is at a basic level. With
+            JavaScript, I consider myself at an intermediate to advanced level, and I am also familiar with SQL at a
+            basic level and other for web languages such as: HTML and CSS.
+          </h2>
+          <h2 class="about-text">
+            When it comes to development, I have hands-on experience with vanilla JavaScript and have also worked with
+            popular frameworks like React (Basic Level), Bootstrap, and jQuery.
 
+          </h2>
+          <h2 class="about-text">
+            In addition to my technical expertise, I am comfortable collaborating with teams and thrive on solving
+            problems systematically. I enjoy analyzing challenges from multiple perspectives, finding innovative
+            solutions, and working towards achieving collective goals.
+
+          </h2>
+          <h2 class="about-text">
+            Overall, I am a driven and enthusiastic individual who is continuously honing my skills and knowledge in the
+            field of FullStack development. My ultimate objective is to create websites that empower users, simplifying
+            their daily tasks and making their lives easier.
+
+          </h2>
+        </section>
         <section class="full-scrn contact" id="contact">
           <h1 class="heading">Contact form goes here</h1>
         </section>
       </main>
-      <div class="hexagon" id="hexagon"> <!-- <img src="./images/logo.png" alt="D" class="float-logo" id="float-logo"> --></div>
+      <div class="hexagon" id="hexagon">
+        <!-- <img src="./images/logo.png" alt="D" class="float-logo" id="float-logo"> -->
+      </div>
     </div>
   </div>
   <script src="js/index.js"></script>
