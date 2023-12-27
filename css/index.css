@@ -101,6 +101,7 @@ h3{
 .container {
   background-image: url('../images/DIA-MIN.png');
   color: var(--fourth);
+  background-size: 70%;
   padding: 5px 5px;
 }
 
@@ -205,7 +206,7 @@ section {
 }
 
 .output-box{
-  color: var(--fourth);
+  color: var(--third);
   font-size: 1.3em;
   font-family: 'Josefine', 'Lucida Sans Regular', Verdana, sans-serif;
   text-align: center;
@@ -256,7 +257,7 @@ section {
   position: fixed;
   right: 6em;
   top: 6em;
-  animation: rotating 7s infinite;
+  animation: fadeout 4s linear infinite;
 }
 
 .hexagon:before,
@@ -296,17 +297,20 @@ section {
     font-size: 17px;
   }
 
+  .container {
+    background-size: 50%;
+  }
   .content,
   .nav-bar {
     max-width: 83vw;
     margin: auto;
   }
-
+  
   .nav-bar {
     height: 55px;
     grid-template-columns: 2fr 3fr;
   }
-
+  
   .logo {
     width: 50px;
     height: auto;
@@ -323,7 +327,9 @@ section {
 
   section {
     width: 100%;
+    margin-bottom: 4em;
   }
+  
   .proj-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -332,6 +338,9 @@ section {
 @media screen and (min-width:1200px) {
   .proj-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .container {
+    background-size: 27%;
   }
 }
 
@@ -350,6 +359,15 @@ section {
     transform: rotate(360deg);
   }
   
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .test {

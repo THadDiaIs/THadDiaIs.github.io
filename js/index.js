@@ -52,5 +52,10 @@ let personalLinkHover = (e) => {
 
 
    });
-   
+
+   document.querySelectorAll("img.personal-link-img").forEach((img) => {
+      img.addEventListener("mouseover", (e) => personalLinkHover(e));
+      img.addEventListener("mousseout", () => output.innerText = "|")
+   });
+
 }
