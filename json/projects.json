@@ -8,14 +8,14 @@
    },
    "2":{
       "name":"Ecommerce Site",
-      "description":"Reliable and user friendly ecommerce site, using html, css, and js, storing data in local storage",
+      "description":"Reliable and user friendly ecommerce site, using html, css, and js, storing data in local storage. CarpiCoder guided this project.",
       "technologies":["html","css","js"],
       "snapshot": "./images/ecomerce.png",
       "url": "https://www.google.com"
    },
    "3":{
       "name":"Image manipulation project",
-      "description":"This is a compact image editor, this allows us to upload an image and eidt it then save it to local storage for fully free",
+      "description":"This is a compact image editor, just upload an image and eidt it then save it to local storage for fully free",
       "technologies":["html","css","js","jquery"],
       "snapshot": "./images/retocador.png",
       "url": "https://github.com/THadDiaIs/canvas-proj"

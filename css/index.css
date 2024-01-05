@@ -38,7 +38,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-size: 19px;
+  font-size: 18px;
   cursor: url('../images/hexagon.webp'), auto;
 }
 
@@ -70,14 +70,14 @@ h3{
   text-align: center;
 }
 
-.full-scrn,
+.welcome,
 .attached {
   height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-.full-scrn {
+.welcome {
   width: 100%;
 }
 
@@ -189,7 +189,7 @@ section {
   cursor:default;
 }
 
-.intro {
+.intro, .about-text {
   max-width: 80%;
 }
 
@@ -216,6 +216,7 @@ section {
 .proj-container {
   display: grid;
   gap: 2em;
+  margin: auto;
 }
 
 .proj {
@@ -244,20 +245,79 @@ section {
   flex-direction: row-reverse;
 }
 
-.technologies, img {
+.technologies, img.tech {
   width: auto;
   height: 1.5em;
   margin: 0.2em;
 }
 
+.illustrated{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 11em;
+}
+
+.illustration {
+  width: 10em;
+  height: auto;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback, .contact-form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+}
+
+.feedback{
+  background: url("../images/hexagonsPattern-min.jpg") center center;
+  background-size: 100%;
+  /* opacity: 0.4; */
+}
+
+.contact-form-container{
+  background: url("../images/lightHexagons-min.jpg") center center;
+  background-size: 100%;
+}
+
+.feedback-form, .links-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.feedback-input{
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: none;
+  outline: none;
+  border-bottom: var(--sec) 2px solid;
+  color: var(--sec);
+  font-family: 'Josefine', 'gridea';
+  caret-color: auto;
+  font-size: 1.3em;
+}
+
 .hexagon {
   width: 100px;
   height: 55px;
-  background-color: rgba(25, 55, 109, 0.87);
+  background-color: rgba(25, 54, 109, 0.527);
   position: fixed;
   right: 6em;
   top: 6em;
-  animation: fadeout 4s linear infinite;
+  /* animation: rotating infinite 15s linear; */
 }
 
 .hexagon:before,
@@ -290,6 +350,9 @@ section {
     scroll-behavior: smooth;
   }
 }
+
+
+
 
 @media screen and ( min-width:600px) {
 
@@ -341,6 +404,15 @@ section {
   }
   .container {
     background-size: 27%;
+  }
+  .contact {
+    flex-direction: row;
+  }
+  .feedback{
+    width: 60%;
+  } 
+  .contact-form-container{
+    width: 40%;
   }
 }
 
