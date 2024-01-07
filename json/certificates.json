@@ -1,0 +1,17 @@
+{
+   1: {
+      "name": "Scientific Computing with Python",
+      "link": "freecodecamp.org/certification/freecodecamp/scientific-computing-with-python",
+      "src": "./images/SCP.png"
+   },
+   2: {
+      "name": "Responsive Web Design",
+      "link": "freecodecamp.org/certification/freecodecamp/responsive-web-design",
+      "src": "./images/RWD.png"
+   },
+   3: {
+      "name": "JavaScript Algorithms and Data Structures",
+      "link": "freecodecamp.org/certification/freecodecamp/javascript-algorithms-and-data-structures",
+      "src": "./images/JSADS.png"
+   }
+}
