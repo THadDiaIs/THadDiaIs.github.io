@@ -2,7 +2,14 @@ let personalLinkClick = (e) => {
    e.preventDefault();
    navigator.clipboard.writeText(e.target.alt);
    ///create a tooltip here and a notification to replace the alert below
-   alert("Copied the text: " + e.target.alt);
+   let notif = document.getElementById("notif");
+   notif.classList.add("notification");
+   notif.innerHTML = `<p class="notification-text">${e.target.alt} copied to clipboard!</p>
+   <button class="notification-btn">X</button>`;
+   setTimeout(() => {
+      notif.innerHTML = "";
+      notif.classList.remove("notification");
+   }, 4000)
 }
 
 let output = document.getElementById("output-box");
@@ -25,7 +32,7 @@ let personalLinkHover = (e) => {
             <p class="description">
             ${data[key].description}
          </p>
-         <div class="url-link"><a href="${data[key].url}">Visit</a></div>
+         <div class="url-link"><a href="${data[key].url}" target="_blank" rel="noopener noreferrer" >Repo</a></div>
          </div>
          `
          }

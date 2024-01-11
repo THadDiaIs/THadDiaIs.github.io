@@ -41,9 +41,9 @@
             <a class="personal-link" href="https://proton.me/mail" target="_blank" rel="noopener noreferrer"><img
                 class="personal-link-img" onclick="personalLinkClick(event)" src="../images/protonmail.svg"
                 alt="diagtswix@proton.me" tooltip="click to copy" /></a>
-            <a class="personal-link" href="https://github.com/THadDiaIs" target="_blank" rel="noopener noreferrer" tooltip="click to copy" ><img
-                class="personal-link-img" onclick="personalLinkClick(event)" src="../images/github.svg"
-                alt="github.com/THadDiaIs" /></a>
+            <a class="personal-link" href="https://github.com/THadDiaIs" target="_blank" rel="noopener noreferrer"
+              tooltip="click to copy"><img class="personal-link-img" onclick="personalLinkClick(event)"
+                src="../images/github.svg" alt="github.com/THadDiaIs" /></a>
           </div>
           <div class="output-box" id="output-box">|</div>
         </section>
@@ -110,7 +110,8 @@
             <div class="certs-container" id="certs-container">
               <div class="cert">
                 <img class="cert-img" src="./images/SCP.png" alt="image from freecodecamp">
-                <p class="cert-text"><a href="http://freecodecamp.org" target="_blank" rel="noopener noreferrer">Scientific Computing with Python</a></p>
+                <p class="cert-text"><a href="http://freecodecamp.org" target="_blank"
+                    rel="noopener noreferrer">Scientific Computing with Python</a></p>
               </div>
             </div>
           </div>
@@ -123,16 +124,32 @@
             <p class="feedback-text">I am always open to new opportunities. Feel free to contact me.</p>
             <from class="feedback-form">
               <input class="feedback-input" type="email" name="email" id="feedback-email" placeholder="Email">
-              <textarea  class="feedback-input" name="message" id="feedback-msg" cols="30" rows="10" placeholder="Message"></textarea>
+              <textarea class="feedback-input" name="message" id="feedback-msg" cols="30" rows="10"
+                placeholder="Message"></textarea>
               <button class="feedback-btn" id="feedback-btn" type="button">Send</button>
             </from>
           </div>
           <div class="contact-links-container">
             <h3 class="heading">Get in touch</h3>
             <div class="links-container">
-              <div class="link-element"><img class="link-element-icon" src="./images/phone-cell.png" alt="link-image"><h3 class="link-element-text">Phone</h3></div>
-              <div class="link-element"><img class="link-element-icon" src="./images/protonmail.svg" alt="link-image"><h3 class="link-element-text">diagtswix@proton.me</h3></div>
-              <div class="link-element"><img class="link-element-icon" src="./images/github.svg" alt="link-image"><h3 class="link-element-text">github.com/thaddiais</h3></div>
+              <div class="link-element"><img class="link-element-icon" src="./images/phone-cell.png" alt="link-image">
+                <div class="link-text-container">
+                  <p class="link-element-text-title">Cell Phone</p>
+                  <h3 class="link-element-text">Phone</h3>
+                </div>
+              </div>
+              <div class="link-element"><img class="link-element-icon" src="./images/protonmail.svg" alt="link-image">
+                <div class="link-text-container">
+                  <p class="link-element-text-title">Email</p>
+                  <h3 class="link-element-text">diagtswix@proton.me</h3>
+                </div>
+              </div>
+              <div class="link-element"><img class="link-element-icon" src="./images/github.svg" alt="link-image">
+                <div class="link-text-container">
+                  <p class="link-element-text-title">Repo</p>
+                  <h3 class="link-element-text">github.com/thaddiais</h3>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -142,6 +159,7 @@
         <a target="_blank" href="https://icons8.com/icon/99687/text-cursor">Text Cursor</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
       </div> -->
     </div>
+    <div id="notif"></div>
   </div>
   <script src="js/index.js"></script>
 </body>

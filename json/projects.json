@@ -4,14 +4,14 @@
       "description":"A lightweight and user friendly point of sale system with many tools and features. Created using: html, css, js, bootstrap, and jquery. With QR code scanner support and ticket of sales generation.",
       "technologies":["html","css","js", "bootstrap", "jquery"],
       "snapshot": "./images/senko.png",
-      "url": "https://www.google.com"
+      "url": "https://github.com/THadDiaIs/SENKO"
    },
    "2":{
       "name":"Ecommerce Site",
       "description":"Reliable and user friendly ecommerce site, using html, css, and js, storing data in local storage. CarpiCoder guided this project.",
       "technologies":["html","css","js"],
       "snapshot": "./images/ecomerce.png",
-      "url": "https://www.google.com"
+      "url": "https://github.com/THadDiaIs/Carpi-Ecommerce"
    },
    "3":{
       "name":"Image manipulation project",
@@ -25,20 +25,20 @@
       "description":"You can track your flight with this website, or booking online. It's fully responsive. Created with html, css and js.",
       "technologies":["html","css","js"],
       "snapshot": "./images/dhantov.png",
-      "url": "https://www.google.com"
+      "url": "https://github.com/THadDiaIs/landing"
    },
    "5":{
       "name":"United States States",
       "description":"A simple game made with tkinter and pandas. Just write the name of the state you know then the game will tell you if it's correct or not",
       "technologies":["python", "pandas"],
       "snapshot": "./images/usStatesQuiz.png",
-      "url": "https://www.google.com"
+      "url": "#"
    },
    "6":{
       "name":"Learn a Language",
       "description":"A simple and powerfull tool to learn french or another language. Using an advvanced algorithm that increases your chances to learn and reduces the time to memorize.",
       "technologies":["python", "pandas"],
       "snapshot": "./images/LearnALang.png",
-      "url": "https://www.google.com"
+      "url": "#"
    }
 }
