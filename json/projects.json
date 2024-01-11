@@ -32,13 +32,13 @@
       "description":"A simple game made with tkinter and pandas. Just write the name of the state you know then the game will tell you if it's correct or not",
       "technologies":["python", "pandas"],
       "snapshot": "./images/usStatesQuiz.png",
-      "url": "#"
+      "url": "https://github.com/THadDiaIs/UnitedStatesStatesGame"
    },
    "6":{
       "name":"Learn a Language",
       "description":"A simple and powerfull tool to learn french or another language. Using an advvanced algorithm that increases your chances to learn and reduces the time to memorize.",
       "technologies":["python", "pandas"],
       "snapshot": "./images/LearnALang.png",
-      "url": "#"
+      "url": "https://github.com/THadDiaIs/LearnALang"
    }
 }
