@@ -93,6 +93,7 @@ h3 {
 
 .welcome {
   width: 100%;
+  background-color: rgba(11, 36, 71, 1);
 }
 
 .attached {
@@ -170,7 +171,7 @@ h3 {
   justify-content: center;
   place-items: center;
   font-family: 'Gridea';
-  font-size: 0.7rem;
+  font-size: 0.7em;
 }
 
 .btn-link:hover {
@@ -191,19 +192,25 @@ section {
   width: 95%;
 }
 
+
 .title {
-  font-size: 2.5em;
-  font-weight: lighter;
+  font-size: 5em;
+  font-weight: 900;
 }
 
 .title:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .title,
 .intro-text,
 .gretting {
   cursor: default;
+}
+
+.welcome-title{
+  font-family: 'Gridea', 'Verdana';
+  color: #A5D7E8;
 }
 
 .intro,
@@ -306,6 +313,7 @@ img.tech {
   width: 85%;
   height: auto;
   padding: 2em;
+  margin-top: 2em;
   border-radius: 0.5em;
   border: 1px solid var(--fourth);
   background-color: #0b24478a;
@@ -536,10 +544,6 @@ img.tech {
   .full-scrn,
   .attached {
     height: 100vh;
-  }
-
-  .btn-link {
-    font-size: 1rem;
   }
 
   section {
