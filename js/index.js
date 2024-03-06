@@ -1,7 +1,6 @@
 let personalLinkClick = (e) => {
    e.preventDefault();
    navigator.clipboard.writeText(e.target.alt);
-   ///create a tooltip here and a notification to replace the alert below
    let notif = document.getElementById("notif");
    notif.classList.add("notification");
    notif.innerHTML = `<p class="notification-text">${e.target.alt} copied to clipboard!</p>
@@ -25,17 +24,14 @@ let personalLinkHover = (e) => {
          for (let key in data) {
             newHtml += `
             <div class="proj">
-         <div class="sample" style="background-image: url(${data[key].snapshot});">
-         <h2 class="proj-name">${data[key].name}</h2>
-            <div class="technologies">${data[key].technologies.map((tech) => `<img class="tech" src="./images/${tech}.svg" alt="${tech}">`).join("")}</div>
+               <div class="sample" style="background-image: url(${data[key].snapshot});">
+                  <h2 class="proj-name">${data[key].name}</h2>
+                  <div class="technologies">${data[key].technologies.map((tech) => `<img class="tech" src="./images/${tech}.svg" alt="${tech}">`).join("")}</div>
+               </div>
+               <p class="description">${data[key].description}</p>
+               <div class="url-link"><a href="${data[key].url}" target="_blank" rel="noopener noreferrer" >Repo</a></div>
             </div>
-            <p class="description">
-            ${data[key].description}
-         </p>
-         <div class="url-link"><a href="${data[key].url}" target="_blank" rel="noopener noreferrer" >Repo</a></div>
-         </div>
-         `
-         }
+         `}
          document.getElementById("proj-container").innerHTML = newHtml
       })
    }).catch((error) => {
@@ -67,20 +63,15 @@ let personalLinkHover = (e) => {
    let welcome = document.getElementById("welcome");
    let transparencyDelta = (1 / windowHalfHeight);
    window.addEventListener('scroll', () => {
-      if (window.scrollY > windowHalfHeight - 100 ) {
+      if (window.scrollY > windowHalfHeight - 100) {
          nav.classList.add("blured");
       } else {
          nav.classList.remove("blured");
       }
-      
-      if (window.scrollY < baseScroll) {
-         if (transparency < 1)transparency = 0 + (transparencyDelta * window.scrollY);
-      } else {
-         if (transparency > 0)transparency = 1 - (transparencyDelta * window.scrollY);
-      }
 
-      console.log(transparency, "transpatency")
-      welcome.style.backgroundColor = `rgba(11, 36, 71, ${transparency})`;
+      console.log(window.scrollY);
+
+      welcome.style.backgroundColor = `rgba(11, 36, 71, ${transparency - (window.scrollY / 1000 * 2.3)})`;
       baseScroll = window.scrollY
 
       /* document.getElementById("hexagon").animate([
